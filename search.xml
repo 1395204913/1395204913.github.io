@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>%2Funcategorized%2F%E6%B5%8B%E8%AF%95%2F</url>
+    <content type="text"><![CDATA[a b c d e f g h i markdown二级标题三级标题四级标题 列表1 1.1 列表2 2.1 2.2 2.3 2.3.1.1 2.3.1.2 2.3.2.1 加粗 斜体 下划线 [TOC] 链接： 知乎图片： ID NAME INFO 1 WANGKAI INFO_1 2 WK INFO_2 3 王凯 INFO_3 代码： 123function(a,b)&#123; console.log(a+b)&#125; 写代码？ 睡觉？ 123]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[visual studio code]]></title>
     <url>%2FVSCODE-GIT%2Fvisual-studio-code%2F</url>
     <content type="text"><![CDATA[Visual Studio Code 使用 Git 报错——Permission denied (publickey)前言生成 SSH 秘钥时，会让你输入私钥的密码，直接回车则意为不设密码，如果设置了私钥密码，每次使用 SSH 进行操作都需要输入私钥密码。虽然这样增加了安全性，但是使用 SSH 的目的很多时候就是想更加方便，跳过输入账号密码这一步。而目前VSCODE还不支持设定了密码的私钥，因此用自带的git工具无法上传，因而需要取消私钥密码。 方法一使用ssh-keygen命令更改 SSH KEY 密码，进入密钥所在文件，一般在C:\Users\用户名\ .ssh文件内，也可用指令（~/.ssh）进入文件 1ssh-keygen -f id_rsa -p 执行此命令后，会让你输入旧密码，然后在输入两次新密码-直接按回车 方法二1.使用openssl命令去掉私钥的密码 1openssl rsa -in ~/.ssh/id_rsa -out ~/.ssh/id_rsa_new 2.备份旧私钥 1mv ~/.ssh/id_rsa ~/.ssh/id_rsa.backup 3.使用新私钥 1mv ~/.ssh/id_rsa_new ~/.ssh/id_rsa 4.设置权限 1chmod 600 ~/.ssh/id_rsa ##]]></content>
@@ -12,17 +20,9 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>%2Funcategorized%2F%E6%B5%8B%E8%AF%95%2F</url>
-    <content type="text"><![CDATA[a b c d e f g h i markdown二级标题三级标题四级标题 列表1 1.1 列表2 2.1 2.2 2.3 2.3.1.1 2.3.1.2 2.3.2.1 加粗 斜体 下划线 [TOC] 链接： 知乎图片： ID NAME INFO 1 WANGKAI INFO_1 2 WK INFO_2 3 王凯 INFO_3 代码： 123function(a,b)&#123; console.log(a+b)&#125; 写代码？ 睡觉？ 123]]></content>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[我的第一篇文章]]></title>
     <url>%2F%E6%97%A5%E5%B8%B8%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%2F</url>
-    <content type="text"><![CDATA[第一篇文章目前用的是hexo博客框架，主题是next，目前水平不咋地，定个小目标：日后用nodeJS撸博客]]></content>
+    <content type="text"><![CDATA[第一篇文章此博客用的是hexo博客框架，主题是next，目前水平不咋地，日后水平提升了，再用nodeJS+Vue从头到尾撸一遍博客]]></content>
       <categories>
         <category>日常</category>
       </categories>
