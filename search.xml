@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[仿写知乎]]></title>
+    <url>%2FVue-%E9%A1%B9%E7%9B%AE%2Fzhihu%2F</url>
+    <content type="text"><![CDATA[前言在学完Vue后，想着平时自己也经常逛知乎，于是便想着能否利用刚学的Vue来对安卓端的知乎进行web仿写 过程项目搭建使用的构建工具是webpack，但是我其实对构建项目上并没有很多经验，主要是应用了vue-cli这个脚手架工具，在vue-cli生成的项目的基础上做了一些小的修改 分析 首先在页面底部有5个链接：首页、会员、通知、我的；因此我创建了4个组件 页面顶端有一个搜索栏，下面是3个链接：关注、推荐、热榜；因此我创建了3个子组件 进入页面默认为首页的推荐页面，因此在router.js中添加路由 1&#123;path:&apos;/&apos;,redirect:&apos;/home&apos;&#125; 在static中创建2个Json文件（包含作者、赞同数、评论数、文章）和若干需要用到的图片，分别用来存储文章信息和热榜信息； 调整组件内元素的布局与样式； 使用Vue-Axios从Json中获取数据，再配合vue-for指令渲染整个页面； 在router.js中加入组件对应的路由。 不足 虽说vue是可以组件化得，我在这里也用到了，但是组件化是一个需要考虑每个应用场景的，同一个组件在不同的view中，展示的会有不一样的地方，所以每种情况显示哪些内容都是需要考虑的。 比如：列表页的每个话题栏li，话题栏是一个组件，但是话题栏有些是没有图片的当没有图片时，你的话题栏li的高度可以要自适应，如果多图图片右下角要给出提示。而进入到专栏列表时话题栏左下部需要有时间，而在平时是没有的这个也需要去注意。 没有完成网页头部的滑动切换界面 因只用了json来存储数据，想不到好的方法来让评论数、赞同数互通，因而没有用vuex来管理数据状态 效果展示]]></content>
+      <categories>
+        <category>Vue 项目</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[vue-axios]]></title>
     <url>%2FVue-vue-axios%2Fvue-axios%2F</url>
     <content type="text"><![CDATA[使用Vue-Axios时遇到的坑一开始： 后来查了下资料由于axios不是vue的插件，不能使用Vue.use().要通过控制原型链的方式来引入 Vue.prototype.$axios = axios。 就是这段代码 卡了好久]]></content>
