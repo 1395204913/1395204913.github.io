@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[仿写知乎]]></title>
-    <url>%2FVue-%E9%A1%B9%E7%9B%AE%2Fzhihu%2F</url>
+    <url>%2F2019%2F08%2F27%2Fzhihu%2F</url>
     <content type="text"><![CDATA[前言在学完Vue后，想着平时自己也经常逛知乎，于是便想着能否利用刚学的Vue来对安卓端的知乎进行web仿写 过程项目搭建使用的构建工具是webpack，但是我其实对构建项目上并没有很多经验，主要是应用了vue-cli这个脚手架工具，在vue-cli生成的项目的基础上做了一些小的修改 分析 首先在页面底部有5个链接：首页、会员、通知、我的；因此我创建了4个组件 页面顶端有一个搜索栏，下面是3个链接：关注、推荐、热榜；因此我创建了3个子组件 进入页面默认为首页的推荐页面，因此在router.js中添加路由 1&#123;path:&apos;/&apos;,redirect:&apos;/home&apos;&#125; 在static中创建2个Json文件（包含作者、赞同数、评论数、文章）和若干需要用到的图片，分别用来存储文章信息和热榜信息； 调整组件内元素的布局与样式； 使用Vue-Axios从Json中获取数据，再配合vue-for指令渲染整个页面； 在router.js中加入组件对应的路由。 不足 虽说vue是可以组件化得，我在这里也用到了，但是组件化是一个需要考虑每个应用场景的，同一个组件在不同的view中，展示的会有不一样的地方，所以每种情况显示哪些内容都是需要考虑的。 比如：列表页的每个话题栏li，话题栏是一个组件，但是话题栏有些是没有图片的当没有图片时，你的话题栏li的高度可以要自适应，如果多图图片右下角要给出提示。而进入到专栏列表时话题栏左下部需要有时间，而在平时是没有的这个也需要去注意。 没有完成网页头部的滑动切换界面 因只用了json来存储数据，想不到好的方法来让评论数、赞同数互通，因而没有用vuex来管理数据状态 效果展示]]></content>
       <categories>
         <category>Vue 项目</category>
@@ -13,7 +13,7 @@
   </entry>
   <entry>
     <title><![CDATA[vue-axios]]></title>
-    <url>%2FVue-vue-axios%2Fvue-axios%2F</url>
+    <url>%2F2019%2F08%2F27%2Fvue-axios%2F</url>
     <content type="text"><![CDATA[使用Vue-Axios时遇到的坑一开始： 后来查了下资料由于axios不是vue的插件，不能使用Vue.use().要通过控制原型链的方式来引入 Vue.prototype.$axios = axios。 就是这段代码 卡了好久]]></content>
       <categories>
         <category>Vue vue-axios</category>
@@ -24,7 +24,7 @@
   </entry>
   <entry>
     <title><![CDATA[visual studio code]]></title>
-    <url>%2FVSCODE-GIT%2Fvisual-studio-code%2F</url>
+    <url>%2F2019%2F06%2F30%2Fvisual-studio-code%2F</url>
     <content type="text"><![CDATA[Visual Studio Code 使用 Git 报错——Permission denied (publickey) 前言生成 SSH 秘钥时，会让你输入私钥的密码，直接回车则意为不设密码，如果设置了私钥密码，每次使用 SSH 进行操作都需要输入私钥密码。虽然这样增加了安全性，但是使用 SSH 的目的很多时候就是想更加方便，跳过输入账号密码这一步。而目前VSCODE还不支持设定了密码的私钥，因此用自带的git工具无法上传，因而需要取消私钥密码。 方法一使用ssh-keygen命令更改 SSH KEY 密码，进入密钥所在文件，一般在C:\Users\用户名\ .ssh文件内，也可用指令（~/.ssh）进入文件 1ssh-keygen -f id_rsa -p 执行此命令后，会让你输入旧密码，然后在输入两次新密码-直接按回车 方法二1.使用openssl命令去掉私钥的密码 1openssl rsa -in ~/.ssh/id_rsa -out ~/.ssh/id_rsa_new 2.备份旧私钥 1mv ~/.ssh/id_rsa ~/.ssh/id_rsa.backup 3.使用新私钥 1mv ~/.ssh/id_rsa_new ~/.ssh/id_rsa 4.设置权限 1chmod 600 ~/.ssh/id_rsa ##]]></content>
       <categories>
         <category>VSCODE GIT</category>
@@ -35,7 +35,7 @@
   </entry>
   <entry>
     <title><![CDATA[JS浅拷贝与深拷贝]]></title>
-    <url>%2FJS%2FJSCopy%2F</url>
+    <url>%2F2018%2F09%2F01%2FJSCopy%2F</url>
     <content type="text"><![CDATA[JS的深拷贝与浅拷贝前言之前一直认为浅拷贝是拷贝了对象的引用，当原对象发生变化的时候，拷贝对象也跟着变化；深拷贝是另外申请了一块内存，内容和原对象一样，更改原对象，拷贝对象不会发生变化。 后来看到一位老哥的博客认识到原来浅拷贝是拷贝一层，深层次的对象级别的就拷贝引用；深拷贝是拷贝多层，每一级别的数据都会拷贝出来。 浅拷贝实现浅拷贝的第一种方法123456789101112131415161718function simpleCopy(primaryObject)&#123; var newObj=&#123;&#125;; for(var i in primaryObject)&#123; newObj[i]=primaryObject[i]; &#125; return obj &#125;var obj_1=&#123; a:'hello world', b:'我叫王凯', c:&#123; a:1433, b:'Bilibili' &#125; &#125;var cloneObj=simpleCopy(obj_1)console.log(obj_1)console.log(cloneObj) 12345改变cloneObj的值cloneObj.a=&apos;changed&apos;cloneObj.c.a=&apos;also changed&apos;console.log(obj_1);console.log(cloneObj) 不难发现修改了cloneObj.c.a的值后，原对象的值也发生了改变，也就是说浅拷贝就是拷贝了一层，除了对象是拷贝的引用类型，其他都是直接将值传递，有自己的内存空间的。 实现浅拷贝的第二种方法ES6中的Object.assign方法，Object.assign是ES6的新函数。Object.assign() 方法可以把任意多个的源对象自身的可枚举属性拷贝给目标对象，然后返回目标对象。但是 Object.assign() 进行的是浅拷贝，拷贝的是对象的属性的引用，而不是对象本身。 Object.assign(target, …sources)参数： target：目标对象。sources：任意多个源对象。返回值：目标对象会被返回。 12345var cloneObj_2=Object.assign(&#123;&#125;,obj_1)cloneObj_2.a='changed'cloneObj_2.c.a='also changed'console.log(obj_1);console.log(cloneObj_2) 效果同上，虽然cloneObj的一级属性不受影响，但是二级属性仍未摆脱a的控制 深拷贝实现深拷贝的第一种方法用JSON.stringify把对象转成字符串，再用JSON.parse把字符串转成新的对象。 12345var cloneObj=JSON.parse(JSON.stringify(obj_1)) obj_1.a='changed' obj_1.c.a=233 console.log(obj_1) console.log(cloneObj) 但是这种方法也有不少坏处，譬如它会抛弃对象的constructor。也就是深拷贝之后，不管这个对象原来的构造函数是什么，在深拷贝之后都会变成Object。 这种方法能正确处理的对象只有 Number, String, Boolean, Array, 扁平对象，即那些能够被 json 直接表示的数据结构。RegExp对象是无法通过这种方式深拷贝。 也就是说，只有可以转成JSON格式的对象才可以这样用，像function没办法转成JSON。 实现深拷贝的第二种方法递归拷贝 123456789101112function deepCopy(initalObj, finalObj) &#123; var obj = finalObj || &#123;&#125; for(var i in initalObj)&#123; if(typeof initalObj[i]==='object')&#123; obj[i]=(initalObj[i].constructor===Array)?[]:&#123;&#125; arguments.callee(initalObj[i],obj[i]) &#125;else&#123; obj[i]=initalObj[i] &#125; &#125; return obj &#125; 上述代码确实可以实现深拷贝。但是当遇到两个互相引用的对象，会出现死循环的情况。 为了避免相互引用的对象导致死循环的情况，则应该在遍历的时候判断是否相互引用对象，如果是则退出循环。 改进版代码如下： 12345678910111213141516function deepClone(initalObj, finalObj) &#123; var obj = finalObj || &#123;&#125;; for (var i in initalObj) &#123; var prop = initalObj[i]; // 避免相互引用对象导致死循环，如initalObj.a = initalObj的情况 if(prop === obj) &#123; continue; &#125; if (typeof prop === 'object') &#123; obj[i] = (prop.constructor === Array) ? [] : &#123;&#125;; arguments.callee(prop, obj[i]); &#125; else &#123; obj[i] = prop; &#125; &#125; return obj;&#125; 实现深拷贝的第三种方法直接使用var newObj = Object.create(oldObj)，可以达到深拷贝的效果。 123456789101112131415function deepClone(initalObj, finalObj) &#123; var obj = finalObj || &#123;&#125;; for (var i in initalObj) &#123; var prop = initalObj[i]; // 避免相互引用对象导致死循环，如initalObj.a = initalObj的情况 if(prop === obj) &#123; continue; &#125; if (typeof prop === 'object') &#123; obj[i] = (prop.constructor === Array) ? [] : Object.create(prop); &#125; else &#123; obj[i] = prop; &#125; &#125; return obj;&#125; 拷贝的其他方法slice和concat这两个方法，仅适用于对不包含引用对象的一维数组的深拷贝，如果包含引用对象则为浅拷贝]]></content>
       <categories>
         <category>JS</category>
