@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[将博客搬至CSDN]]></title>
+    <url>%2F2020%2F05%2F02%2F%E5%B0%86%E5%8D%9A%E5%AE%A2%E6%90%AC%E8%87%B3CSDN%2F</url>
+    <content type="text"><![CDATA[今天试着将博客内容搬到CSDN中]]></content>
+      <tags>
+        <tag>CSDN</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[JS函数累加]]></title>
     <url>%2F2020%2F03%2F23%2FJS%E5%87%BD%E6%95%B0%E7%B4%AF%E5%8A%A0%2F</url>
     <content type="text"><![CDATA[JS函数累加1.add(1,2……)1234567function add(...args)&#123; return args.reduce((prev,next)=&gt;&#123; return prev+next; &#125;)&#125;let result=add(1,2,3,4);console.log(result);//10 2.add(1)(2)(3)1234567891011121314function add(a)&#123; //闭包 sum function sum(b)&#123; a=a+b; return sum; &#125; //重写toString方法 sum.toString=function()&#123; return a; &#125; //返回函数 return sum;&#125;console.log(add(1)(2)(3)(4));//10]]></content>
