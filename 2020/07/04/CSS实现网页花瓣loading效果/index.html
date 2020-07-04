@@ -57,21 +57,20 @@
   };
 </script>
 
-  <meta name="description" content="前言在学完Vue后，想着平时自己也经常逛知乎，于是便想着能否利用刚学的Vue来对安卓端的知乎进行web仿写 过程项目搭建使用的构建工具是webpack，但是我其实对构建项目上并没有很多经验，主要是应用了vue-cli这个脚手架工具，在vue-cli生成的项目的基础上做了一些小的修改 分析 首先在页面底部有5个链接：首页、会员、通知、我的；因此我创建了4个组件  页面顶端有一个搜索栏，下面是3个链接">
-<meta name="keywords" content="Vue">
+  <meta name="description" content="最终效果  完整代码 https://github.com/1395204913/CSSDemo/tree/master/petals_loading 主要实现代码 首先创建父容器load,再创建6个花瓣容器petal 12345678910&amp;lt;!-- 父容器 --&amp;gt;    &amp;lt;div class=&quot;load&quot;&amp;gt;        &amp;lt;!-- 六个花瓣 --&amp;gt;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="仿写知乎">
-<meta property="og:url" content="http://1395204913.github.io/2019/08/27/zhihu/index.html">
+<meta property="og:title" content="王凯的博客">
+<meta property="og:url" content="http://1395204913.github.io/2020/07/04/CSS实现网页花瓣loading效果/index.html">
 <meta property="og:site_name" content="王凯的博客">
-<meta property="og:description" content="前言在学完Vue后，想着平时自己也经常逛知乎，于是便想着能否利用刚学的Vue来对安卓端的知乎进行web仿写 过程项目搭建使用的构建工具是webpack，但是我其实对构建项目上并没有很多经验，主要是应用了vue-cli这个脚手架工具，在vue-cli生成的项目的基础上做了一些小的修改 分析 首先在页面底部有5个链接：首页、会员、通知、我的；因此我创建了4个组件  页面顶端有一个搜索栏，下面是3个链接">
+<meta property="og:description" content="最终效果  完整代码 https://github.com/1395204913/CSSDemo/tree/master/petals_loading 主要实现代码 首先创建父容器load,再创建6个花瓣容器petal 12345678910&amp;lt;!-- 父容器 --&amp;gt;    &amp;lt;div class=&quot;load&quot;&amp;gt;        &amp;lt;!-- 六个花瓣 --&amp;gt;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://ae01.alicdn.com/kf/H9b0c04722a504f9a97dcb252047250c6s.gif">
-<meta property="og:updated_time" content="2019-08-28T01:24:36.697Z">
+<meta property="og:image" content="https://s1.ax1x.com/2020/07/04/Nztw34.png">
+<meta property="og:updated_time" content="2020-07-04T13:05:19.430Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="仿写知乎">
-<meta name="twitter:description" content="前言在学完Vue后，想着平时自己也经常逛知乎，于是便想着能否利用刚学的Vue来对安卓端的知乎进行web仿写 过程项目搭建使用的构建工具是webpack，但是我其实对构建项目上并没有很多经验，主要是应用了vue-cli这个脚手架工具，在vue-cli生成的项目的基础上做了一些小的修改 分析 首先在页面底部有5个链接：首页、会员、通知、我的；因此我创建了4个组件  页面顶端有一个搜索栏，下面是3个链接">
-<meta name="twitter:image" content="https://ae01.alicdn.com/kf/H9b0c04722a504f9a97dcb252047250c6s.gif">
-  <link rel="canonical" href="http://1395204913.github.io/2019/08/27/zhihu/">
+<meta name="twitter:title" content="王凯的博客">
+<meta name="twitter:description" content="最终效果  完整代码 https://github.com/1395204913/CSSDemo/tree/master/petals_loading 主要实现代码 首先创建父容器load,再创建6个花瓣容器petal 12345678910&amp;lt;!-- 父容器 --&amp;gt;    &amp;lt;div class=&quot;load&quot;&amp;gt;        &amp;lt;!-- 六个花瓣 --&amp;gt;">
+<meta name="twitter:image" content="https://s1.ax1x.com/2020/07/04/Nztw34.png">
+  <link rel="canonical" href="http://1395204913.github.io/2020/07/04/CSS实现网页花瓣loading效果/">
 
 
 <script id="page.configurations">
@@ -80,7 +79,7 @@
   };
 </script>
 
-  <title>仿写知乎 | 王凯的博客</title>
+  <title> | 王凯的博客</title>
   
 
 
@@ -246,7 +245,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://1395204913.github.io/2019/08/27/zhihu/">
+    <link itemprop="mainEntityOfPage" href="http://1395204913.github.io/2020/07/04/CSS实现网页花瓣loading效果/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王凯">
@@ -260,7 +259,7 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">仿写知乎
+          <h1 class="post-title" itemprop="name headline">
 
               
             
@@ -280,37 +279,12 @@
                 
               
 
-              <time title="创建时间：2019-08-27 21:19:42" itemprop="dateCreated datePublished" datetime="2019-08-27T21:19:42+08:00">2019-08-27</time>
+              <time title="创建时间：2020-07-04 20:53:55 / 修改时间：21:05:19" itemprop="dateCreated datePublished" datetime="2020-07-04T20:53:55+08:00">2020-07-04</time>
             </span>
           
             
 
             
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-08-28 09:24:36" itemprop="dateModified" datetime="2019-08-28T09:24:36+08:00">2019-08-28</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Vue-项目/" itemprop="url" rel="index"><span itemprop="name">Vue 项目</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -333,35 +307,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在学完Vue后，想着平时自己也经常逛知乎，于是便想着能否利用刚学的Vue来对安卓端的知乎进行web仿写</p>
-<h3 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h3><h4 id="项目搭建"><a href="#项目搭建" class="headerlink" title="项目搭建"></a>项目搭建</h4><p>使用的构建工具是webpack，但是我其实对构建项目上并没有很多经验，主要是应用了vue-cli这个脚手架工具，在vue-cli生成的项目的基础上做了一些小的修改</p>
-<h5 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h5><ul>
-<li><p>首先在页面底部有5个链接：首页、会员、通知、我的；因此我创建了4个组件</p>
-</li>
-<li><p>页面顶端有一个搜索栏，下面是3个链接：关注、推荐、热榜；因此我创建了3个子组件</p>
-</li>
-<li><p>进入页面默认为首页的推荐页面，因此在router.js中添加路由</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;path:&apos;/&apos;,redirect:&apos;/home&apos;&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在static中创建2个Json文件（包含作者、赞同数、评论数、文章）和若干需要用到的图片，分别用来存储文章信息和热榜信息；</p>
-</li>
-<li><p>调整组件内元素的布局与样式；</p>
-</li>
-<li><p>使用Vue-Axios从Json中获取数据，再配合vue-for指令渲染整个页面；</p>
-</li>
-<li><p>在router.js中加入组件对应的路由。</p>
-</li>
-</ul>
-<h3 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h3><ol>
-<li><p>虽说vue是可以组件化得，我在这里也用到了，但是组件化是一个需要考虑每个应用场景的，同一个组件在不同的view中，展示的会有不一样的地方，所以每种情况显示哪些内容都是需要考虑的。</p>
-<p>比如：列表页的每个话题栏<code>li</code>，话题栏是一个组件，但是话题栏有些是没有图片的当没有图片时，你的话题栏<code>li</code>的高度可以要自适应，如果多图图片右下角要给出提示。而进入到专栏列表时话题栏左下部需要有时间，而在平时是没有的这个也需要去注意。</p>
-</li>
-<li><p>没有完成网页头部的滑动切换界面</p>
-</li>
-<li><p>因只用了json来存储数据，想不到好的方法来让评论数、赞同数互通，因而没有用vuex来管理数据状态</p>
-</li>
-</ol>
-<h3 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h3><p><img src="https://ae01.alicdn.com/kf/H9b0c04722a504f9a97dcb252047250c6s.gif" alt></p>
+        <p><strong>最终效果</strong></p>
+<p><img src="https://s1.ax1x.com/2020/07/04/Nztw34.png" alt></p>
+<p><strong>完整代码</strong></p>
+<p><a href="https://github.com/1395204913/CSSDemo/tree/master/petals_loading" target="_blank" rel="noopener">https://github.com/1395204913/CSSDemo/tree/master/petals_loading</a></p>
+<p><strong>主要实现代码</strong></p>
+<p>首先创建父容器load,再创建6个花瓣容器petal</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 父容器 --&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"load"</span>&gt;</span><br><span class="line">        &lt;!-- 六个花瓣 --&gt;</span><br><span class="line">        &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"petal"</span>&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"petal"</span>&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"petal"</span>&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"petal"</span>&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"petal"</span>&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"petal"</span>&gt;&lt;/div&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>将父容器绘制成圆形</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.load::before&#123;</span><br><span class="line">    content: <span class="string">''</span>;</span><br><span class="line">    display: block;</span><br><span class="line">    width: <span class="number">100</span>px;</span><br><span class="line">    height: <span class="number">100</span>px;</span><br><span class="line">    background-color: #fff;</span><br><span class="line">    border-radius: <span class="number">50</span>%;</span><br><span class="line">    opacity: <span class="number">0.7</span>;</span><br><span class="line">    background-color: #eb4d4b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>绘制6个花瓣</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.petal::before&#123;</span><br><span class="line">    content: <span class="string">''</span>;</span><br><span class="line">    display: block;</span><br><span class="line">    width: <span class="number">60</span>px;</span><br><span class="line">    height: <span class="number">60</span>px;</span><br><span class="line">    background-color: #fff;</span><br><span class="line">    border-radius: <span class="number">40</span>px <span class="number">40</span>px <span class="number">0</span> <span class="number">0</span>;</span><br><span class="line">    transform-origin: top center;</span><br><span class="line">    transform:rotateX(<span class="number">-70</span>deg);</span><br><span class="line">    animation: flower <span class="number">2.5</span>s cubic-bezier(<span class="number">0.5</span>,<span class="number">0</span>,<span class="number">0.5</span>,<span class="number">1</span>) infinite;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>此时6个花瓣集中于一处，按照一定角度张开</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.petal:nth-child(<span class="number">1</span>)&#123;</span><br><span class="line">    transform: rotate(<span class="number">0</span>deg);</span><br><span class="line">&#125;</span><br><span class="line">.petal:nth-child(<span class="number">2</span>)&#123;</span><br><span class="line">    transform: rotate(<span class="number">60</span>deg);</span><br><span class="line">&#125;</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
+<p>添加动画</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">@keyframes flower&#123;</span><br><span class="line">    <span class="number">0</span>%,<span class="number">100</span>%&#123;</span><br><span class="line">        width: <span class="number">80</span>px;</span><br><span class="line">        height: <span class="number">280</span>px;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="number">40</span>%&#123;</span><br><span class="line">        height: <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes load&#123;</span><br><span class="line">    <span class="number">0</span>%&#123;</span><br><span class="line">        transform: rotate(<span class="number">0</span>deg) scale(<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="number">50</span>%&#123;</span><br><span class="line">        transform: rotate(<span class="number">360</span>deg) scale(<span class="number">.4</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="number">100</span>%&#123;</span><br><span class="line">        transform: rotate(<span class="number">720</span>deg) scale(<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -376,7 +341,7 @@
     <strong>本文作者： </strong>王凯</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://1395204913.github.io/2019/08/27/zhihu/" title="仿写知乎">http://1395204913.github.io/2019/08/27/zhihu/</a>
+    <a href="http://1395204913.github.io/2020/07/04/CSS实现网页花瓣loading效果/">http://1395204913.github.io/2020/07/04/CSS实现网页花瓣loading效果/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -385,16 +350,10 @@
       </div>
 
     <footer class="post-footer">
-          
-        
-        <div class="post-tags">
-            <a href="/tags/Vue/" rel="tag"> Vue</a>
-          
-        </div>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-              <a href="/2019/08/27/vue-axios/" rel="next" title="vue-axios">
-                <i class="fa fa-chevron-left"></i> vue-axios
+              <a href="/2020/03/23/JS函数累加/" rel="next" title="JS函数累加">
+                <i class="fa fa-chevron-left"></i> JS函数累加
               </a>
             
           </div>
@@ -402,10 +361,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-              <a href="/2020/03/23/JS继承/" rel="prev" title="JS继承方式">
-                JS继承方式 <i class="fa fa-chevron-right"></i>
-              </a>
-            
           </div>
         </div>
     </footer>
@@ -440,17 +395,8 @@
 
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -541,23 +487,6 @@
 
         </div>
       </div>
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过程"><span class="nav-number">2.</span> <span class="nav-text">过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#项目搭建"><span class="nav-number">2.1.</span> <span class="nav-text">项目搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#分析"><span class="nav-number">2.1.1.</span> <span class="nav-text">分析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不足"><span class="nav-number">3.</span> <span class="nav-text">不足</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#效果展示"><span class="nav-number">4.</span> <span class="nav-text">效果展示</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
-      
 
     </div>
   </aside>
