@@ -57,19 +57,21 @@
   };
 </script>
 
-  <meta name="description" content="JS函数累加1.add(1,2……)1234567function add(...args)&amp;#123;    return args.reduce((prev,next)=&amp;gt;&amp;#123;        return prev+next;    &amp;#125;)&amp;#125;let result=add(1,2,3,4);console.log(result);//10  2.add(1)(2)">
-<meta name="keywords" content="JS">
+  <meta name="description" content="CSS实现网页花瓣loading效果最终效果  完整代码 https://github.com/1395204913/CSSDemo/tree/master/petals_loading 主要实现代码 首先创建父容器load,再创建6个花瓣容器petal 12345678910&amp;lt;!-- 父容器 --&amp;gt;    &amp;lt;div class=&quot;load&quot;&amp;gt;        &amp;lt;!--">
+<meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS函数累加">
-<meta property="og:url" content="http://1395204913.github.io/2020/03/23/JS函数累加/index.html">
+<meta property="og:title" content="JS浅拷贝与深拷贝">
+<meta property="og:url" content="http://1395204913.github.io/2020/06/15/CSS实现网页花瓣loading效果/index.html">
 <meta property="og:site_name" content="王凯的博客">
-<meta property="og:description" content="JS函数累加1.add(1,2……)1234567function add(...args)&amp;#123;    return args.reduce((prev,next)=&amp;gt;&amp;#123;        return prev+next;    &amp;#125;)&amp;#125;let result=add(1,2,3,4);console.log(result);//10  2.add(1)(2)">
+<meta property="og:description" content="CSS实现网页花瓣loading效果最终效果  完整代码 https://github.com/1395204913/CSSDemo/tree/master/petals_loading 主要实现代码 首先创建父容器load,再创建6个花瓣容器petal 12345678910&amp;lt;!-- 父容器 --&amp;gt;    &amp;lt;div class=&quot;load&quot;&amp;gt;        &amp;lt;!--">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-23T09:19:08.151Z">
+<meta property="og:image" content="https://s1.ax1x.com/2020/07/04/Nztw34.png">
+<meta property="og:updated_time" content="2020-07-04T13:03:06.775Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS函数累加">
-<meta name="twitter:description" content="JS函数累加1.add(1,2……)1234567function add(...args)&amp;#123;    return args.reduce((prev,next)=&amp;gt;&amp;#123;        return prev+next;    &amp;#125;)&amp;#125;let result=add(1,2,3,4);console.log(result);//10  2.add(1)(2)">
-  <link rel="canonical" href="http://1395204913.github.io/2020/03/23/JS函数累加/">
+<meta name="twitter:title" content="JS浅拷贝与深拷贝">
+<meta name="twitter:description" content="CSS实现网页花瓣loading效果最终效果  完整代码 https://github.com/1395204913/CSSDemo/tree/master/petals_loading 主要实现代码 首先创建父容器load,再创建6个花瓣容器petal 12345678910&amp;lt;!-- 父容器 --&amp;gt;    &amp;lt;div class=&quot;load&quot;&amp;gt;        &amp;lt;!--">
+<meta name="twitter:image" content="https://s1.ax1x.com/2020/07/04/Nztw34.png">
+  <link rel="canonical" href="http://1395204913.github.io/2020/06/15/CSS实现网页花瓣loading效果/">
 
 
 <script id="page.configurations">
@@ -78,7 +80,7 @@
   };
 </script>
 
-  <title>JS函数累加 | 王凯的博客</title>
+  <title>JS浅拷贝与深拷贝 | 王凯的博客</title>
   
 
 
@@ -244,7 +246,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://1395204913.github.io/2020/03/23/JS函数累加/">
+    <link itemprop="mainEntityOfPage" href="http://1395204913.github.io/2020/06/15/CSS实现网页花瓣loading效果/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王凯">
@@ -258,7 +260,7 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">JS函数累加
+          <h1 class="post-title" itemprop="name headline">JS浅拷贝与深拷贝
 
               
             
@@ -278,11 +280,21 @@
                 
               
 
-              <time title="创建时间：2020-03-23 21:19:42 / 修改时间：17:19:08" itemprop="dateCreated datePublished" datetime="2020-03-23T21:19:42+08:00">2020-03-23</time>
+              <time title="创建时间：2020-06-15 21:13:41" itemprop="dateCreated datePublished" datetime="2020-06-15T21:13:41+08:00">2020-06-15</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2020-07-04 21:03:06" itemprop="dateModified" datetime="2020-07-04T21:03:06+08:00">2020-07-04</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -293,7 +305,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/JS/" itemprop="url" rel="index"><span itemprop="name">JS</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a></span>
 
                 
                 
@@ -321,9 +333,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="JS函数累加"><a href="#JS函数累加" class="headerlink" title="JS函数累加"></a><center>JS函数累加</center></h2><h3 id="1-add-1-2……"><a href="#1-add-1-2……" class="headerlink" title="1.add(1,2……)"></a>1.add(1,2……)</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">...args</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> args.reduce(<span class="function">(<span class="params">prev,next</span>)=&gt;</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> prev+next;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> result=add(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>);</span><br><span class="line"><span class="built_in">console</span>.log(result);<span class="comment">//10</span></span><br></pre></td></tr></table></figure>
+        <h1 id="CSS实现网页花瓣loading效果"><a href="#CSS实现网页花瓣loading效果" class="headerlink" title="CSS实现网页花瓣loading效果"></a><center>CSS实现网页花瓣loading效果</center></h1><p><strong>最终效果</strong></p>
+<p><img src="https://s1.ax1x.com/2020/07/04/Nztw34.png" alt></p>
+<p><strong>完整代码</strong></p>
+<p><a href="https://github.com/1395204913/CSSDemo/tree/master/petals_loading" target="_blank" rel="noopener">https://github.com/1395204913/CSSDemo/tree/master/petals_loading</a></p>
+<p><strong>主要实现代码</strong></p>
+<p>首先创建父容器load,再创建6个花瓣容器petal</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 父容器 --&gt;</span><br><span class="line">    &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"load"</span>&gt;</span><br><span class="line">        &lt;!-- 六个花瓣 --&gt;</span><br><span class="line">        &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"petal"</span>&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"petal"</span>&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"petal"</span>&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"petal"</span>&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"petal"</span>&gt;&lt;/div&gt;</span><br><span class="line">        &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"petal"</span>&gt;&lt;/div&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="2-add-1-2-3"><a href="#2-add-1-2-3" class="headerlink" title="2.add(1)(2)(3)"></a>2.add(1)(2)(3)</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">a</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//闭包 sum</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">b</span>)</span>&#123;</span><br><span class="line">        a=a+b;</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//重写toString方法</span></span><br><span class="line">    sum.toString=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> a;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//返回函数</span></span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(add(<span class="number">1</span>)(<span class="number">2</span>)(<span class="number">3</span>)(<span class="number">4</span>));<span class="comment">//10</span></span><br></pre></td></tr></table></figure>
+<p>将父容器绘制成圆形</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.load::before&#123;</span><br><span class="line">    content: <span class="string">''</span>;</span><br><span class="line">    display: block;</span><br><span class="line">    width: <span class="number">100</span>px;</span><br><span class="line">    height: <span class="number">100</span>px;</span><br><span class="line">    background-color: #fff;</span><br><span class="line">    border-radius: <span class="number">50</span>%;</span><br><span class="line">    opacity: <span class="number">0.7</span>;</span><br><span class="line">    background-color: #eb4d4b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>绘制6个花瓣</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.petal::before&#123;</span><br><span class="line">    content: <span class="string">''</span>;</span><br><span class="line">    display: block;</span><br><span class="line">    width: <span class="number">60</span>px;</span><br><span class="line">    height: <span class="number">60</span>px;</span><br><span class="line">    background-color: #fff;</span><br><span class="line">    border-radius: <span class="number">40</span>px <span class="number">40</span>px <span class="number">0</span> <span class="number">0</span>;</span><br><span class="line">    transform-origin: top center;</span><br><span class="line">    transform:rotateX(<span class="number">-70</span>deg);</span><br><span class="line">    animation: flower <span class="number">2.5</span>s cubic-bezier(<span class="number">0.5</span>,<span class="number">0</span>,<span class="number">0.5</span>,<span class="number">1</span>) infinite;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>此时6个花瓣集中于一处，按照一定角度张开</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.petal:nth-child(<span class="number">1</span>)&#123;</span><br><span class="line">    transform: rotate(<span class="number">0</span>deg);</span><br><span class="line">&#125;</span><br><span class="line">.petal:nth-child(<span class="number">2</span>)&#123;</span><br><span class="line">    transform: rotate(<span class="number">60</span>deg);</span><br><span class="line">&#125;</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
+<p>添加动画</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">@keyframes flower&#123;</span><br><span class="line">    <span class="number">0</span>%,<span class="number">100</span>%&#123;</span><br><span class="line">        width: <span class="number">80</span>px;</span><br><span class="line">        height: <span class="number">280</span>px;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="number">40</span>%&#123;</span><br><span class="line">        height: <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes load&#123;</span><br><span class="line">    <span class="number">0</span>%&#123;</span><br><span class="line">        transform: rotate(<span class="number">0</span>deg) scale(<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="number">50</span>%&#123;</span><br><span class="line">        transform: rotate(<span class="number">360</span>deg) scale(<span class="number">.4</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="number">100</span>%&#123;</span><br><span class="line">        transform: rotate(<span class="number">720</span>deg) scale(<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -337,7 +365,7 @@
     <strong>本文作者： </strong>王凯</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://1395204913.github.io/2020/03/23/JS函数累加/" title="JS函数累加">http://1395204913.github.io/2020/03/23/JS函数累加/</a>
+    <a href="http://1395204913.github.io/2020/06/15/CSS实现网页花瓣loading效果/" title="JS浅拷贝与深拷贝">http://1395204913.github.io/2020/06/15/CSS实现网页花瓣loading效果/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -349,13 +377,13 @@
           
         
         <div class="post-tags">
-            <a href="/tags/JS/" rel="tag"> JS</a>
+            <a href="/tags/CSS/" rel="tag"> CSS</a>
           
         </div>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-              <a href="/2020/03/23/JS继承/" rel="next" title="JS继承方式">
-                <i class="fa fa-chevron-left"></i> JS继承方式
+              <a href="/2020/03/23/JS函数累加/" rel="next" title="JS函数累加">
+                <i class="fa fa-chevron-left"></i> JS函数累加
               </a>
             
           </div>
@@ -363,10 +391,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-              <a href="/2020/06/15/CSS实现网页花瓣loading效果/" rel="prev" title="JS浅拷贝与深拷贝">
-                JS浅拷贝与深拷贝 <i class="fa fa-chevron-right"></i>
-              </a>
-            
           </div>
         </div>
     </footer>
@@ -518,7 +542,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JS函数累加"><span class="nav-number">1.</span> <span class="nav-text">JS函数累加</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-add-1-2……"><span class="nav-number">1.1.</span> <span class="nav-text">1.add(1,2……)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-add-1-2-3"><span class="nav-number">1.2.</span> <span class="nav-text">2.add(1)(2)(3)</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS实现网页花瓣loading效果"><span class="nav-number">1.</span> <span class="nav-text">CSS实现网页花瓣loading效果</span></a></li></ol></div>
             
 
           </div>
